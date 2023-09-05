@@ -5,7 +5,7 @@ def ler_matriz_do_arquivo(txt):
         with open(txt, 'r') as arquivo:
             linhas = arquivo.readlines()
             for linha in linhas:
-                elementos = [int(x) for x in linha.strip().split()]
+                elementos = [x for x in linha.strip().split()]
                 matriz.append(elementos)
     except FileNotFoundError:
         print(f"O arquivo '{txt}' não foi encontrado.")
