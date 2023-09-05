@@ -1,4 +1,4 @@
-a midef ler_matriz_do_arquivo(txt):
+def ler_matriz_do_arquivo(txt):
     matriz = []
     # Tratando Caso de erro em que arquivo não existe
     try:
