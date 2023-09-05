@@ -1,10 +1,12 @@
-def ler_matriz_do_arquivo(txt):
+a midef ler_matriz_do_arquivo(txt):
     matriz = []
+    # Tratando Caso de erro em que arquivo não existe
     try:
+       # Optei pelo with, para não precisar dar "close"
         with open(txt, "r") as arquivo:
             linhas = arquivo.readlines()
             for linha in linhas:
-                elementos = [int(x) for x in linha.strip().split()]
+                elementos = [x for x in linha.strip().split()]
                 matriz.append(elementos)
     except FileNotFoundError:
         print(f"O arquivo '{txt}' não foi encontrado.")
