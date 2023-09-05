@@ -12,7 +12,7 @@ def ler_matriz_do_arquivo(txt):
         return None
     return matriz
 
-
+# Questão 2
 def tira_repetidos(matriz):
     if matriz is None or len(matriz) == 0:
         print("Matriz vazia.")
@@ -27,7 +27,7 @@ def tira_repetidos(matriz):
                     repete.add(matriz[i][j])
         return matriz
 
-
+# Questão 3
 def mostra_matriz(matriz):
     if matriz is None or len(matriz) == 0:
         print("Matriz vazia.")
