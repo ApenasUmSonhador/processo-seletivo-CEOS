@@ -24,8 +24,4 @@ def particiona(L1, L2):
     meio = len(L1)//2
     L1, L2 = L1[:meio], L1[meio:]
 
-    return L1, L2
-l1 = [65455,45,465,46,4,654,9498]
-l2 = [65,46,48979,74,979,4,9456487]
-l1, l2 = particiona(l1,l2)
-print(l1, l2)
+    return L1, L2
