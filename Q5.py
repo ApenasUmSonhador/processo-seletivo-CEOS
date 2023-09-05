@@ -24,6 +24,3 @@ def acha_maior_3(L):
     if maior_3 == float("-inf"):
         maior_3 = None
     return maior_3
-
-l = [1,2,3,4,2,3,233,6566,57575,57,757]
-print(acha_maior_3(l))
