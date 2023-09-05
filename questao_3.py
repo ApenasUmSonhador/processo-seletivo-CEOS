@@ -1,3 +1,4 @@
+# Questão 1
 def ler_matriz_do_arquivo(txt):
     matriz = []
     try:
@@ -12,10 +13,11 @@ def ler_matriz_do_arquivo(txt):
     return matriz
 
 def mostra_matriz(matriz):
+    # Tratamento de caso de matriz vazia
     if matriz is None or len(matriz) == 0:
         print("Matriz vazia.")
         return
-
+    # Optei por separar os elementos de uma mesma linha por um tab.
     for linha in matriz:
         for elemento in linha:
             print(elemento, end='\t')
